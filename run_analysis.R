@@ -39,7 +39,7 @@ activity = merge(y, activity.lables, by.x = "activity_id", by.y = "id")
 fullset = cbind(subject, activity, x)
 
 #create summary dataset
-summary = fullset %>% group_by(activity, subject) %>% summarize_each(funs(mean))
+summary = fullset %>% group_by(activity_name, subject_id) %>% summarize_each(funs(mean))
 
 #write summary dataset
 write.table(summary, file = "summary_run_data.txt", row.names = FALSE)
