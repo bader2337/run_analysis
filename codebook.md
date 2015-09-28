@@ -37,3 +37,6 @@ on each of the X, Y, and Z axes.
 * fBodyAccJerkMag
 * fBodyGyroMag
 * fBodyGyroJerkMag
+
+##Output File
+The output file is called "summary_run_data.txt." It is an average of each datapoint in the X_ datasets, grouped by activity and test subject.
