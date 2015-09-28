@@ -2,12 +2,12 @@ library(dplyr)
 #load all data files
 activity.lables = read.table("./activity_labels.txt", stringsAsFactors = FALSE, col.names = c("id", "activity_name"))
 features = read.table("./features.txt", stringsAsFactors = FALSE, col.names = c("id", "measure"))
-subject.train = read.table("./train/subject_train.txt", stringsAsFactors = FALSE, col.names = c("subject_id"))
-y.train = read.table("./train/y_train.txt", stringsAsFactors = FALSE, col.names = c("activity_id"))
-x.train = read.table("./train/X_train.txt", stringsAsFactors = FALSE)
-subject.test = read.table("./test/subject_test.txt", stringsAsFactors = FALSE, col.names = c("subject_id"))
-y.test = read.table("./test/y_test.txt", stringsAsFactors = FALSE, col.names = c("activity_id"))
-x.test = read.table("./test/X_test.txt", stringsAsFactors = FALSE)
+subject.train = read.table("./subject_train.txt", stringsAsFactors = FALSE, col.names = c("subject_id"))
+y.train = read.table("./y_train.txt", stringsAsFactors = FALSE, col.names = c("activity_id"))
+x.train = read.table("./X_train.txt", stringsAsFactors = FALSE)
+subject.test = read.table("./subject_test.txt", stringsAsFactors = FALSE, col.names = c("subject_id"))
+y.test = read.table("./y_test.txt", stringsAsFactors = FALSE, col.names = c("activity_id"))
+x.test = read.table("./X_test.txt", stringsAsFactors = FALSE)
 
 #get column numbers and names of mean and std measures 
 #by searching the measures column of the features table 
