@@ -11,8 +11,8 @@
 
 ##Breakdown of the Columns for select files:
 ###activity_label.txt
-ID: Id that maps to the values in y_test and y_train
-Activity: different activities performed in the study (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+* ID: Id that maps to the values in y_test and y_train
+* Activity: different activities performed in the study (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 
 ###x_train.txt and x_test.txt
 
